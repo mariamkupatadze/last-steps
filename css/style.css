@@ -1,0 +1,98 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+}
+.box {
+    width: 700px;
+    height: 450px;
+    background-color: white;
+    position: relative;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+}
+.box .title h3 {
+    text-align: center;
+    color: rgb(62, 61, 61);
+    font-size: 25px;
+    margin-top: 20px;
+}
+.box .title p {
+    text-align: center;
+    color: rgb(105, 103, 103);
+    font-size: 18px;
+}
+
+.personal-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 30px;
+}
+.personal-box .icon {
+    text-align: center;
+    
+}
+.personal-box .icon i.active {
+    background-color:rgb(228, 52, 17);
+    color: white;
+ 
+}
+
+.personal-box .icon i {
+    font-size: 30px;
+    padding: 10px 15px;
+    border: 2px solid rgb(228, 52, 17);
+    border-radius: 50%;
+    color: rgb(146, 141, 141);    
+}
+.personal-box p {
+    margin-top: 20px;
+    font-size: 22px;
+    color: rgb(146, 141, 141);
+}
+
+.personal-box p.active {
+    color: rgb(228, 52, 17);
+}
+.tab {
+    width: 100%;
+    margin-left: 150px;
+    font-size: 20px;
+    color: black;
+    margin-top: 20px;
+    font-weight: 500;
+}
+.tabText.activeText {
+    display: block;
+}
+
+.tabText {
+    display: none;
+}
+.btn {
+    width: fit-content;
+    position: fixed;
+    bottom:50px;
+    right:60px;
+    border: none; 
+}
+.prevBtn, .nextBtn {
+    font-size: 22px;
+    background-color: rgb(228, 52, 17);
+    padding: 5px 60px;
+    color: white;
+    width: fit-content;
+    margin-top: 30px;
+    border: none;
+    
+}
+.prevBtn {
+    margin-right:220px;
+}
